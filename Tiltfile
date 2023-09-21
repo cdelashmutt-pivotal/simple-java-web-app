@@ -1,5 +1,6 @@
 LOCAL_PATH = os.getenv("LOCAL_PATH", default='.')
-NAMESPACE = os.getenv("NAMESPACE", default='default')
+NAMESPACE = 'dev'
+
 allow_k8s_contexts('dev')
 
 k8s_custom_deploy(
